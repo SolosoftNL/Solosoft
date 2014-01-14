@@ -26,5 +26,10 @@ namespace Solosoft.Web.Controllers
 
             return View();
         }
+
+        public ContentResult News()
+        {
+            return Content("Momenteel is er geen nieuws!");
+        }
     }
 }
