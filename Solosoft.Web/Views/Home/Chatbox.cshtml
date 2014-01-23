@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Chatbox</title>
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <h2 class="pull-left">Chatbox</h2>
+                <div class="col-lg-6">
+                    <input class="pull-right" type="text" id="box" />
+                </div>
+                <div class="col-lg-6">
+                    <input class="pull-left" type="text" id="name" />
+                </div>
+
+                <div class="btn btn-success">Sent</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+@section scripts{
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Content/css")
+}
+

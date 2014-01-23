@@ -31,5 +31,22 @@ namespace Solosoft.Web.Controllers
         {
             return Content("Momenteel is er geen nieuws!");
         }
+
+        public ActionResult Chatbox()
+        {
+            return View();
+        }
+
+        public ActionResult Team()
+        {
+            return View();
+        }
+
+        public ActionResult AboutUs()
+        {
+            return View();
+        }
+
+
     }
 }

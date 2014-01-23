@@ -9,7 +9,10 @@ namespace Solosoft.Web
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.*",
+                        "~/scripts/jquery.gmap.min.js"
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -17,7 +20,7 @@ namespace Solosoft.Web
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+                        "~/Scripts/modernizr*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
@@ -25,7 +28,20 @@ namespace Solosoft.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/Templates/style/font-awesome.css",
+                      "~/Content/Templates/style/ddlevelsmenu-base.css",
+                      "~/Content/Templates/style/ddlevelsmenu-topbar.css",
+                      "~/Content/Templates/style/slider.css",
+                      "~/Content/Templates/style/prettyPhoto.css",
+                      "~/Content/Templates/style/style.css"
+                      ));
+
+            bundles.Add(new ScriptBundle("~/bundles/jsOverig").Include(
+                "~/Scripts/ddlevelsmenu.js",
+                "~/Scripts/filter.js",
+                "~/Scripts/custom.js"
+                ));
         }
     }
 }

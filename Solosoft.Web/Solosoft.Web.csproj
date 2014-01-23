@@ -336,6 +336,7 @@
     <Content Include="Views\Home\AboutUs.cshtml" />
     <Content Include="Views\Home\Team.cshtml" />
     <Content Include="Views\Home\UnderConstruction.cshtml" />
+    <Content Include="Views\Home\Chatbox.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
